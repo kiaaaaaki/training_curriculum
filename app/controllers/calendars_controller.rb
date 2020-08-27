@@ -8,7 +8,7 @@ class CalendarsController < ApplicationController
 
   # 予定の保存
   def create
-    # binding.pry
+   
     Plan.create(plan_params)
     redirect_to action: :index
   end
@@ -42,8 +42,8 @@ class CalendarsController < ApplicationController
       end
 
       # wday_num = Date.today.wday
-      # #Date.today.wdayを利用して添字となる数値を得る
-      # #もしもwday_numが7以上であれば、7を引く
+      
+     
       # if wday_num += 1
       #   #条件式を記述
       #   wday_num = wday_num - 7
@@ -52,7 +52,7 @@ class CalendarsController < ApplicationController
 
       @week_days.push(days)
     end
-                                                                                            #  wdaysから値を取り出す記述
+                                                     
   end
 end
 
